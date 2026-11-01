@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'SNACK - Restaurant</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 30px 10px;
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        h1 {
+            color: #ff9900;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .info {
+            font-size: 1.1rem;
+            color: #ccc;
+            margin: 5px 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #333;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .card h3 {
+            margin: 15px 0 10px 0;
+            color: #ff9900;
+        }
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            margin-top: 20px;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+        }
+        .btn-whatsapp:hover {
+            background-color: #1da851;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #777;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>O'SNACK</h1>
+            <p class="info">📍 Rond-point AXA</p>
+            <p class="info">🕒 Ouvert de 16h00 à 00h00</p>
+            <p class="info">📞 78 633 49 64</p>
+            <a href="https://wa.me/221786334964?text=Bonjour,%20je%20souhaite%20passer%20une%20commande%20chez%20O'SNACK !" class="btn-whatsapp" target="_blank">
+                Commander sur WhatsApp
+            </a>
+        </header>
+
+        <h2 style="text-align: center; color: #ff9900; margin-bottom: 15px;">Notre Carte</h2>
+
+        <div class="menu-grid">
+            <div class="card">
+                <img src="https://i.ibb.co/680L93h/menu1.jpg" alt="Menu O'SNACK 1">
+                <h3>Burgers & Specialités</h3>
+            </div>
+            <div class="card">
+                <img src="https://i.ibb.co/L5Q1s1M/menu2.jpg" alt="Menu O'SNACK 2">
+                <h3>Tacos & Wraps</h3>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 O'SNACK - Tous droits réservés</p>
+        </footer>
+    </div>
+
+</body>
+</html>
